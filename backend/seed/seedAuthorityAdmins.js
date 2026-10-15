@@ -6,7 +6,7 @@ import { connectDB } from '../config/db.js'
 
 dotenv.config()
 
-const authorities = process.env.AUTHORITIES;
+const authorities = JSON.parse(process.env.AUTHORITIES);
 
 const seed = async () => {
   try {
